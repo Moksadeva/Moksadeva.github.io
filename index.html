@@ -1,109 +1,456 @@
-<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>觀 ･自在 - 觀自在菩薩 行深般若波羅蜜多時</title><meta name="description" content=""><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="觀 ･自在"><meta name="twitter:description" content=""><meta name="twitter:image" content="http://yoursite.com/img/avatar.png"><meta property="og:type" content="website"><meta property="og:title" content="觀 ･自在"><meta property="og:url" content="http://yoursite.com/"><meta property="og:site_name" content="觀 ･自在"><meta property="og:description" content=""><meta property="og:image" content="http://yoursite.com/img/avatar.png"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
-var t = Cookies.get("theme")
-if (autoChangeMode == '1'){
-  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
-  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+<!doctype html>
+<!--
+COPYRIGHT by HighHay/Mivfx
+Before using this theme, you should accept themeforest licenses terms.-->
 
-  if (t === undefined){
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport){
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour < 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-  }
-  } else if (t == 'light') activateLightMode()
-  else activateDarkMode()
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
 
-} else if (autoChangeMode == '2'){
-  now = new Date();
-  hour = now.getHours();
-  isNight = hour < 6 || hour >= 18
-  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode() 
-} else {
-  if ( t == 'dark' ) activateDarkMode()
-  else if ( t == 'light') activateLightMode()
-}
+        <!-- Page Title Here -->
+        <title>喵窝･起点</title>
+		
+              <!-- Disable screen scaling-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-function activateDarkMode(){
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
-  }
-}
-function activateLightMode(){
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
-  }
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/css/caise.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="http://yoursite.com/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查詢的內容:${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"正","msgToSimplifiedChinese":"簡"},
-  copy: {
-    success: '複製成功',
-    error: '複製錯誤',
-    noSupport: '瀏覽器不支持'
-  },
-  bookmark: {
-    message_prev: '按',
-    message_next: '鍵將本頁加入書籤'
-  },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: {"languages":{"author":"作者: John Doe","link":"鏈接: ","source":"來源: 觀 ･自在","info":"著作權歸作者所有。商業轉載請聯繫作者獲得授權，非商業轉載請註明出處。"}},
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: {"bookmark":{"message_prev":"按","message_next":"鍵將本頁加入書籤"},"chs_to_cht":"你已切換為繁體","cht_to_chs":"你已切換為簡體","day_to_night":"你已切換為深色模式","night_to_day":"你已切換為淺色模式","bgLight":"#FF7AD7","bgDark":"#2d3035","position":"bottom-left"},
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  highlightShrink: 'false',
-  isFontAwesomeV5: false,
-  isPhotoFigcaption: true
-  
-}</script><script>var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isSidebar: false  
-  }</script><noscript><style>
-#page-header {
-  opacity: 1
-}
-.justified-gallery img{
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 4.2.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">標籤</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/huakai.love/"><i class="fa-fw fa fa-home"></i><span> 觀 ･自在</span></a></div><div class="menus_item"><a class="site-page" href="/huakai.love/"><i class="fa-fw fa fa-ravelry"></i><span> 海内访问</span></a></div><div class="menus_item"><a class="site-page" href="/huakai.love/"><i class="fa-fw fa fa-ravelry"></i><span> 海外访问</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 收集归纳</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-clock-o"></i><span> 时光穿梭</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签列表</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类目录</span></a></li><li><a class="site-page" href="/software/"><i class="fa-fw fa fa-arrow-down"></i><span> 软件整理</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-th-large" aria-hidden="true"></i><span> 文章分类</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/xxx/"><i class="fa-fw fa fa-h-square"></i><span> MD语法</span></a></li><li><a class="site-page" href="/categories/xxx/"><i class="fa-fw fa fa-gamepad"></i><span> 自在小记</span></a></li><li><a class="site-page" href="/posts/xxx/"><i class="fa-fw fa fa-cutlery"></i><span> 爱上美食</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-flag-checkered" aria-hidden="true"></i><span> 漫书影音</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/library/"><i class="fa-fw fa fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 观影</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fa fa-github-alt"></i><span> 番剧</span></a></li><li><a class="site-page" href="/game/"><i class="fa-fw fa fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="http://www.mdeditor.com/" target="_blank" rel="noopener"><i class="fa-fw fa fa-pencil"></i><span> 写作</span></a></li><li><a class="site-page" href="/shuo/"><i class="fa-fw fa fa-commenting-o"></i><span> 喵说</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-map-signs" aria-hidden="true"></i><span> 碎碎心语</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/posts/xxx/"><i class="fa-fw fa fa-snowflake-o"></i><span> 相约2020</span></a></li><li><a class="site-page" href="/posts/xxx/"><i class="fa-fw fa fa-snowflake-o"></i><span> 记忆2019</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-ravelry" aria-hidden="true"></i><span> 喵</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/xxx/"><i class="fa-fw fa fa-wordpress"></i><span> 池塘博客</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 小可爱们</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-address-card"></i><span> 观于自在</span></a></li><li><a class="site-page" href="/aboutsite/"><i class="fa-fw fa fa-rocket"></i><span> 小站成长</span></a></li><li><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-calendar-o"></i><span> 投喂留言</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="full_page" id="nav" style="background-image: url(/img/index.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">觀 ･自在</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/huakai.love/"><i class="fa-fw fa fa-home"></i><span> 觀 ･自在</span></a></div><div class="menus_item"><a class="site-page" href="/huakai.love/"><i class="fa-fw fa fa-ravelry"></i><span> 海内访问</span></a></div><div class="menus_item"><a class="site-page" href="/huakai.love/"><i class="fa-fw fa fa-ravelry"></i><span> 海外访问</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 收集归纳</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-clock-o"></i><span> 时光穿梭</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签列表</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类目录</span></a></li><li><a class="site-page" href="/software/"><i class="fa-fw fa fa-arrow-down"></i><span> 软件整理</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-th-large" aria-hidden="true"></i><span> 文章分类</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/xxx/"><i class="fa-fw fa fa-h-square"></i><span> MD语法</span></a></li><li><a class="site-page" href="/categories/xxx/"><i class="fa-fw fa fa-gamepad"></i><span> 自在小记</span></a></li><li><a class="site-page" href="/posts/xxx/"><i class="fa-fw fa fa-cutlery"></i><span> 爱上美食</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-flag-checkered" aria-hidden="true"></i><span> 漫书影音</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/library/"><i class="fa-fw fa fa-book"></i><span> 图书</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 观影</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 相册</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fa fa-github-alt"></i><span> 番剧</span></a></li><li><a class="site-page" href="/game/"><i class="fa-fw fa fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="http://www.mdeditor.com/" target="_blank" rel="noopener"><i class="fa-fw fa fa-pencil"></i><span> 写作</span></a></li><li><a class="site-page" href="/shuo/"><i class="fa-fw fa fa-commenting-o"></i><span> 喵说</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-map-signs" aria-hidden="true"></i><span> 碎碎心语</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/posts/xxx/"><i class="fa-fw fa fa-snowflake-o"></i><span> 相约2020</span></a></li><li><a class="site-page" href="/posts/xxx/"><i class="fa-fw fa fa-snowflake-o"></i><span> 记忆2019</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-ravelry" aria-hidden="true"></i><span> 喵</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/xxx/"><i class="fa-fw fa fa-wordpress"></i><span> 池塘博客</span></a></li><li><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 小可爱们</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-address-card"></i><span> 观于自在</span></a></li><li><a class="site-page" href="/aboutsite/"><i class="fa-fw fa fa-rocket"></i><span> 小站成长</span></a></li><li><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-calendar-o"></i><span> 投喂留言</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="site-info"><h1 id="site_title">觀 ･自在</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Moksadeva" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="mailto:xxxxxxxx@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a></div></div><div id="scroll_down"><i class="fa fa-angle-down scroll-down-effects"></i></div></div><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/03/25/hexo-blog-encrypt/" title="Hexo文章加密">     <img class="post_bg lazyload" data-src="/img/category.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo文章加密"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/25/hexo-blog-encrypt/" title="Hexo文章加密">Hexo文章加密</a><div class="article-meta-wrap"><time class="post-meta__date" title="發表於 2020-03-25 09:22:16"><i class="fa fa-calendar" aria-hidden="true"></i>2020-03-25</time></div><div class="content">您好, 这是一篇需要密码的专享文章。57d65acf11ba5fa163ec09d3fadd6344355f760f0df20da551ed4aed199592c216496c144b33f12226a6f6c2ddf9632885d39316b6932030edea04b460d2ee55305f ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/25/butterfly-config-3/" title="hexo-theme-butterfly 安装文档（三）主题配置">     <img class="post_bg lazyload" data-src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo-theme-butterfly 安装文档（三）主题配置"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/25/butterfly-config-3/" title="hexo-theme-butterfly 安装文档（三）主题配置">hexo-theme-butterfly 安装文档（三）主题配置</a><div class="article-meta-wrap"><time class="post-meta__date" title="發表於 2020-03-25 08:08:29"><i class="fa fa-calendar" aria-hidden="true"></i>2020-03-25</time></div><div class="content">本教程更新于 2019 年 03 月 17 日Butterfly 已经升级到 V2.2.0为了方便我回復大家的问题和集中管理，此文章的评论关闭。如有跟主题相关的问题，可以在 Github Issues 或者留言板上反馈 / 询问关于主题自定义的问题，建议仔细观察主题代码的写法，自己动手操作，不懂的可 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/03/25/butterfly-config-2/" title="hexo-theme-butterfly 安装文档（二）主题页面">     <img class="post_bg lazyload" data-src="/img/category.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo-theme-butterfly 安装文档（二）主题页面"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/25/butterfly-config-2/" title="hexo-theme-butterfly 安装文档（二）主题页面">hexo-theme-butterfly 安装文档（二）主题页面</a><div class="article-meta-wrap"><time class="post-meta__date" title="發表於 2020-03-25 06:44:39"><i class="fa fa-calendar" aria-hidden="true"></i>2020-03-25</time></div><div class="content">本教程更新于 2019 年 03 月 17 日Butterfly 已经升级到 V2.2.0为了方便我回復大家的问题和集中管理，此文章的评论关闭。如有跟主题相关的问题，可以在 Github Issues 或者留言板上反馈 / 询问关于主题自定义的问题，建议仔细观察主题代码的写法，自己动手操作，不懂的可 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/25/butterfly-config-1/" title="hexo-theme-butterfly 安装文档（一）快速开始">     <img class="post_bg lazyload" data-src="/img/category.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo-theme-butterfly 安装文档（一）快速开始"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/25/butterfly-config-1/" title="hexo-theme-butterfly 安装文档（一）快速开始">hexo-theme-butterfly 安装文档（一）快速开始</a><div class="article-meta-wrap"><time class="post-meta__date" title="發表於 2020-03-25 05:18:15"><i class="fa fa-calendar" aria-hidden="true"></i>2020-03-25</time></div><div class="content">您好, 这是一篇需要密码的专享文章。95bc64fa8cc6837549ebfa0aab79c54ee6a2304f3b69e36362d1556a4cefe61173d601afd7f25f3722d06ae5f2db246b740c45cc912a67283fef90d1fba6b8b351c5 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/03/21/MarkDown%20%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/" title="MarkDown 语法总结">     <img class="post_bg lazyload" data-src="/img/tag.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MarkDown 语法总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/21/MarkDown%20%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/" title="MarkDown 语法总结">MarkDown 语法总结</a><div class="article-meta-wrap"><time class="post-meta__date" title="發表於 2020-03-21 00:00:00"><i class="fa fa-calendar" aria-hidden="true"></i>2020-03-21</time></div><div class="content">
-            使用了Markdown编辑器后，书写变得好痛快 。敲文字和敲代码一样，几乎不需要使用鼠标。下面是一些我常用的Markdown使用规则，留着备用。
-          
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        
+        <!-- Initializer -->
+        <link rel="stylesheet" href="./home/css/normalize.css">        
+        
+        <!-- Web fonts and Web Icons -->
+        <link rel="stylesheet" href="./home/css/pageloader.css">
+        <link rel="stylesheet" href="./home/fonts/opensans/stylesheet.css">
+        <link rel="stylesheet" href="./home/fonts/asap/stylesheet.css">
+        <!--link rel="stylesheet" href=" https://cdn.bootcss.com/ionicons/1.5.2/css/ionicons.min.css"-->
+        <link rel="stylesheet" href="./home/css/ionicons.min.css">
+        
+        <!-- Vendor CSS style -->
+        <link rel="stylesheet" href="./home/css/foundation.min.css">
+        <link rel="stylesheet" href="./home/js/vendor/jquery.fullPage.css">
+        <link rel="stylesheet" href="./home/js/vegas/vegas.min.css">
+        
+		<!-- Main CSS files -->
+        <link rel="stylesheet" href="./home/css/main.css">
+        <link rel="stylesheet" href="./home/css/main_responsive.css">
+        <link rel="stylesheet" href="./home/css/style-font1.css">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet" type="text/css">
+        <script src="./home/js/vendor/modernizr-2.7.1.min.js"></script>
+		<!--script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script-->
+		<script src="./home/js/yremp/yremp-js@1.5/sakura.js"></script>
+		<style type="text/css">
+		/**普通指针样式**/
+		body{cursor:url(https://hexo-1251213061.cos.ap-beijing.myqcloud.com/x/dorcandy.cur),default;}//默认鼠标效果
+		/**链接指针样式**/
+		a:hover{cursor:url(https://hexo-1251213061.cos.ap-beijing.myqcloud.com/x/pointer.cur),pointer;}//链接选择效果
+		</style>
+    </head>
+    <body id="menu" class="alt-bg">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- Site config : put launching date here
+             data-date="01/31/2015 23:00:00"        Launching date
+             data-date-timezone="+0"                Lanching date time zone
+-->
+        
+        
+        <!-- Page Loader -->
+        <div class="page-loader" id="page-loader">
+            <div><i class="ion ion-loading-d"></i><p>欢迎来到火喵小站~</p></div>
+        </div>
+        <!-- BEGIN OF site header Menu -->
+		<!-- Add "material" class for a material design style -->
+		<header class="header-top">
+<!--		<header class="header-top material">-->
+			<div class="logo">
+				<a href="#home">
+					<img src="home/img/logo_large.png" alt="Logo Brand">
+				</a>
+			</div>
+            <div class="menu clearfix">
+                <a href="https://d"><span style="color:#FFD700;">部落格</span></a>
+				<a href="https://m">镜像站</a>
+                <a href="#contact">找到我</a>
+            </div>
+		</header>
+		<header class="header-github">
+			<a href="https://github.com"><img width="149" height="149" src="home/img/github.png" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+		</header>
+        <!-- END OF site header Menu-->
+        
+        <!-- BEGIN OF Quick nav icons at left -->
+		<nav class="quick-link count-6 nav-left">
+			<ul id="qmenu">
+				<li data-menuanchor="home">
+					<a href="#home">🎪
+					</a>
+					<span class="title">欢迎页面</span>
+				</li>
+				<li data-menuanchor="when">
+					<a href="#when">🍰
+					</a>
+					<span class="title">吃蛋糕啦</span>
+				</li>
+				<li data-menuanchor="register">
+					<a href="#register">🌏
+					</a>
+					<span class="title">站点一览</span>
+				</li>
+				<li data-menuanchor="about-us">
+					<a href="#about-us">👒
+					</a>
+					<span class="title">聊聊火喵</span>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact">📧
+					</a>
+					<span class="title">联系火喵</span>
+				</li>
+			</ul>
+		</nav>
+        <!-- END OF Quick nav icons at left -->
+        
 
-程序员的本质：程序的进阶和优化
+
+        <!-- BEGIN OF site cover -->
+        <div class="page-cover" id="home">
+		
+            <!-- Cover Background -->
+            <!--div class="cover-bg pos-abs full-size bg-img" data-image-src="https://imgs.aixifan.com/live/1495974356790/1495974356790.jpg"></div-->
+            <div class="cover-bg pos-abs full-size bg-img" data-image-src="./home/img/aixifan/1495974356790.jpg"></div>
+
+            <!-- BEGIN OF Slideshow Background -->
+            <!--div class="cover-bg pos-abs full-size slide-show">
+			
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974355466/1495974355466.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974500801/1495974500801.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974356790/1495974356790.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974367777/1495974367777.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974498292/1495974498292.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974351291/1495974351291.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974370919/1495974370919.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974462151/1495974462151.jpg'></i>
+				<i class='img' data-src='https://imgs.aixifan.com/live/1495974467947/1495974467947.jpg'></i>
 
 
 
+			</div-->
+            <div class="cover-bg pos-abs full-size slide-show">
+			
+				<i class='img' data-src='./home/img/aixifan/1495974355466.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974500801.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974356790.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974367777.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974498292.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974351291.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974370919.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974462151.jpg'></i>
+				<i class='img' data-src='./home/img/aixifan/1495974467947.jpg'></i>
 
 
-简化人的操作，更少的代码做更多的事情
-节省时间效率，在更短的时 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/20/hello-world/" title="Hello World">     <img class="post_bg lazyload" data-src="/img/archive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/20/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><time class="post-meta__date" title="發表於 2020-03-20 02:05:06"><i class="fa fa-calendar" aria-hidden="true"></i>2020-03-20</time></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">6</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">標籤</div><div class="length_num">6</div></a></div></div><div class="card-info-bookmark is-center"><a class="bookmark button--primary button--animated" id="bookmark-it" href="javascript:;" title="加入書籤" target="_self"><i class="fa fa-bookmark" aria-hidden="true"></i><span>加入書籤</span></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Moksadeva" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="mailto:xxxxxxxx@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>公告</span></div><div class="announcement_content">感謝訪問本站，若喜歡請收藏 ^_^</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>最新文章</span></div><div class="aside-recent-item"> <div class="aside-recent-post"><a href="/2020/03/25/hexo-blog-encrypt/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/category.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Hexo文章加密" alt="Hexo文章加密"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/25/hexo-blog-encrypt/" title="Hexo文章加密">Hexo文章加密</div><time class="aside-post_meta post-meta__date" title="發表於 2020-03-25 09:22:16">2020-03-25</time></div></a></div><div class="aside-recent-post"><a href="/2020/03/25/butterfly-config-3/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="hexo-theme-butterfly 安装文档（三）主题配置" alt="hexo-theme-butterfly 安装文档（三）主题配置"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/25/butterfly-config-3/" title="hexo-theme-butterfly 安装文档（三）主题配置">hexo-theme-butterfly 安装文档（三）主题配置</div><time class="aside-post_meta post-meta__date" title="發表於 2020-03-25 08:08:29">2020-03-25</time></div></a></div><div class="aside-recent-post"><a href="/2020/03/25/butterfly-config-2/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/category.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="hexo-theme-butterfly 安装文档（二）主题页面" alt="hexo-theme-butterfly 安装文档（二）主题页面"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/25/butterfly-config-2/" title="hexo-theme-butterfly 安装文档（二）主题页面">hexo-theme-butterfly 安装文档（二）主题页面</div><time class="aside-post_meta post-meta__date" title="發表於 2020-03-25 06:44:39">2020-03-25</time></div></a></div><div class="aside-recent-post"><a href="/2020/03/25/butterfly-config-1/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/category.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="hexo-theme-butterfly 安装文档（一）快速开始" alt="hexo-theme-butterfly 安装文档（一）快速开始"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/25/butterfly-config-1/" title="hexo-theme-butterfly 安装文档（一）快速开始">hexo-theme-butterfly 安装文档（一）快速开始</div><time class="aside-post_meta post-meta__date" title="發表於 2020-03-25 05:18:15">2020-03-25</time></div></a></div><div class="aside-recent-post"><a href="/2020/03/21/MarkDown%20%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/tag.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="MarkDown 语法总结" alt="MarkDown 语法总结"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/21/MarkDown%20%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/" title="MarkDown 语法总结">MarkDown 语法总结</div><time class="aside-post_meta post-meta__date" title="發表於 2020-03-21 00:00:00">2020-03-21</time></div></a></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>標籤</span></div><div class="card-tag-cloud"><a href="/tags/HTML/" style="font-size: 16px; color: #999">HTML</a> <a href="/tags/Markdown/" style="font-size: 16px; color: #999">Markdown</a> <a href="/tags/%E4%BD%93%E9%AA%8C%E4%BC%9A%E5%91%98%E4%B8%93%E4%BA%AB/" style="font-size: 16px; color: #999">体验会员专享</a> <a href="/tags/%E5%B9%B4%E5%BA%A6%E4%BC%9A%E5%91%98%E4%B8%93%E4%BA%AB/" style="font-size: 16px; color: #999">年度会员专享</a> <a href="/tags/%E7%A7%81%E6%9C%89/" style="font-size: 16px; color: #999">私有</a> <a href="/tags/%E8%AF%AD%E6%B3%95/" style="font-size: 16px; color: #999">语法</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>歸檔</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/"><span class="archive-list-date">2020年03月</span><span class="archive-list-count">6</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fa fa-line-chart" aria-hidden="true"></i><span>網站資訊</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章數目 :</div><div class="webinfo-article-count">6</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已運行時間 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="5/4/2013 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站總字數 :</div><div class="webinfo-site-wordcount">10k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站訪客數 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站總訪問量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By John Doe</div><div class="framework-info"><span>Power by </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text"><div class="footer_custom_text"><a href="https://coding.net/" target="_blank"><img src="https://dn-coding-net-production-pp.codehub.cn/b1a5d1de-f19a-4430-95ac-65886022e259.png" alt="" style="width:auto;height:16px;"></a> | <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/" target="_blank">GitHub</a> | <a href="https://tongji.baidu.com/" target="_blank"><img src="https://tongji.baidu.com/web/image/homepage_logo.png" alt="" style="width:auto;height:18px;"></a> , <a href="https://analytics.google.com/" target="_blank"><img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" alt="" style="width:auto;height:16px;"></a> Google Analytics , <script type="text/javascript" src="//js.users.51.la/33.js"></script> | <a href="https://cloud.tencent.com/product/cos" target="_blank"> <img src="https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/img/nav/logo-bg-color.svg" alt="" style="width:auto;height:14px;"></a> | <a href="https://www.jsdelivr.com/" target="_blank"> <img src="https://www.jsdelivr.com/img/logo-horizontal.svg" alt="" style="width:auto;height:16px;"></a> | <a href="https://www.foreverblog.cn/" target="_blank"> <img src="https://img.foreverblog.cn/logo_en_default.png" alt="小站已加入“十年之约”" style="width:auto;height:16px;"></a></div> <!-- 网站运行时间的设置 --> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script> var now = new Date(); function createtime() { var grt= new Date("03/09/2019 13:14:21"); now.setTime(now.getTime()+250); days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; } setInterval("createtime()",250); </script> <!-- 不蒜子 --> <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> <span> 出现了 <span id="busuanzi_value_site_uv"></span> 只小喵，</span> <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> <span>吃掉了 <span id="busuanzi_value_site_pv"></span> 条鱼， </span> <script type="text/javascript" src="quote.51.la/q?id=2020&mb=4"></script> <span>只喵</span></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="簡繁轉換" target="_self">正</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜間模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="設置"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-arrow-up" id="go-up" title="回到頂部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script><script src="/js/crash_cheat.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="/js/third-party/canvas-nest.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-document.body.addEventListener('input', POWERMODE);
-</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/third-party/click_heart.js"></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
-if (subtitleEffect){ 
-  var typed = new Typed("#subtitle", {
-    strings: '觀自在菩薩，行深般若波羅蜜多時，照見五蘊皆空，度一切苦厄&#46;,舍利子，色不异空，空不异色，色即是空，空即是色，受想行識，亦複如是&#46;,舍利子，是諸法空相，不生不滅，不垢不淨，不增不减&#46;,是故空中無色，無受想行識，無眼耳鼻舌身意，無色聲香味觸法，無眼界，乃至無意識界&#46;,無無明，亦無無明盡，乃至無老死，亦無老死盡&#46;,無苦集滅道，無智亦無得&#46;,以無所得故，菩提薩埵，依般若波羅蜜多故，心無罣礙，無罣礙故，無有恐怖，遠離顛倒夢想，究竟涅磐&#46;,三世諸佛，依般若波羅蜜多故，得阿耨多羅三藐三菩提&#46;,故知般若波羅蜜多，是大神咒，是大明咒，是無上咒，是無等等咒，能除一切苦，真實不虛&#46;,故說般若波羅蜜多咒，即說咒曰：揭諦揭諦波羅揭諦波羅僧揭諦菩提薩婆訶&#46;'.split(","),
-    startDelay: 300,
-    typeSpeed: 150,
-    loop: true,
-    backSpeed: 50
-  })
-}else{
-  document.getElementById("subtitle").innerHTML = '觀自在菩薩，行深般若波羅蜜多時，照見五蘊皆空，度一切苦厄&#46;'
-  }</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":180,"height":360,"hOffset":30,"vOffset":-20},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
+
+			</div>
+            <!-- END OF Slideshow Background -->
+            
+            <!--BEGIN OF Static video bg  - uncomment below to use Video as Background-->
+            <!--<div id="container" class="video-container show-for-medium-up">
+                <video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted"
+                       width="640" height="360">
+                    <source src="vid/flower_loop.mp4" type="video/mp4">
+                </video>
+            </div>-->
+            <!--END OF Static video bg-->
+			
+			<!-- Solid color as filter or as background -->
+			
+            <div class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(51, 2, 48, 0.12)"></div>
+        </div>
+        <!--END OF site Cover -->
+        
+        <!-- BEGIN OF site main content content here -->
+        <main class="page-main" id="mainpage">             
+            
+			<!-- Begin of home page -->
+			<div class="section page-home page page-cent" id="s-home">
+				<!-- Logo -->
+				<div class="logo-container">
+					<img class="h-logo" src="img/logo_only.png" alt="Logo">
+				</div>
+				<!-- Content -->
+				<section class="content">
+					
+					<header class="header">
+						<div class="h-left">
+							<h2 title="点这里访问博客~">
+	<a href="https://diary.dorcandy.cn/"><span style="color:#FFFFFF;">Scarlet 's </span><strong><span style="color:#FFFFFF;">小站</span></strong></a>
+</h2>
+						</div>
+						<div class="h-right">
+							<h3>记录 着<br>一点一滴</h3>
+							<h4 class="subhead"><a href="#when">Come on！！& Love me！</a></h4>
+						</div>
+					</header>
+				</section>
+				<div>
+						<article class="text">
+                        <form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
+                            <p class="invite center">
+							<script type="text/javascript" src="//quote.51.la/q?id=20&mb=1"></script>
+							</p>
+                        </form>
+                </div>
+				<!-- Scroll down button -->
+                <footer class="p-footer p-scrolldown">
+                    <a href="#when">
+                        <div class="arrow-d">
+							<div class="before">你&nbsp;是&nbsp;否</div>
+							<div class="after">在&nbsp;期&nbsp;待&nbsp;着</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+			</div>
+			<!-- End of home page -->
+            
+            <!-- Begin of timer page -->
+            <div class="section page-when page page-cent" id="s-when">
+                <section class="content">
+                    <div class="clock clock-countdown">
+						<div class="site-config"
+							 data-date="7/18/2020 00:00:00" 
+							 data-date-timezone="+0"
+							 ></div>
+						<header class="header">
+							🎂 距离<strong> 火喵 </strong>的生日还剩下 🎉
+						</header>
+                        <div class="elem-left">
+                            <div class="digit hours">00</div>
+                            <div class="text">时</div>
+                        </div>						
+                        <div class="elem-center">
+							<!-- Optional text at top or image logo -->
+							<!--<span class="text top">here in</span>-->
+							<!-- Optional logo at top -->
+							<span class="text top"><img class="img" alt="Logo" src="img/logo_large.png"></span>
+                            <div class="digit days">000</div>
+                            <div class="text">日</div>
+                        </div>
+                        <div class=" elem-right">
+                            <div class="digit minutes">00</div>
+                            <div class="text">分</div>
+                        </div>
+						
+						<!-- second knob here -->
+						<div class="second">
+							<input class="knob container" 
+								   id="second-knob"
+								  	data-width="400"
+								  	data-height="400"
+								 data-displayInput=false
+									data-fgColor="#fff"
+									data-bgColor="rgba(255,255,255,0)"
+									data-thickness=".07"
+								 	value="0"
+									data-displayPrevious=true
+								   data-max="6000"
+								   />
+						</div>
+                    </div>                   
+                    
+                </section>                
+                <footer class="p-footer p-scrolldown">
+                    <a href="#register">
+                        <div class="arrow-d">
+							<div class="before">节&nbsp;日</div>
+							<div class="after">快&nbsp;乐</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of timer page -->
+            
+            <!-- Begin of register page -->
+            <div class="section page-register page page-cent " id="s-register">
+                <section class="content">
+                    <header class="p-title">
+                        <h3><span style="color:#FFFFFF;">🍭 火喵站点一览</span></h3>
+                    </header>
+                    <div>
+						<article class="text">
+                        <p><a href="https://diary.dorcandy.cn/" target="_blank"><span style="color:#FFFFFF;">🍉 火喵·札记：  火喵的博客，每次的新博文都在这里</span></a></p>	
+                        <p><a href="https://diary.dorcandy.cn/about" target="_blank"><span style="color:#FFFFFF;">🍓 火喵·自述：  火喵想说的一些话</span></a></p>	
+                        <p><a href="https://diary.dorcandy.cn/guestbook" target="_blank"><span style="color:#FFFFFF;">🍋 火喵·留言：  去留言板留言</span></a></p>
+                        <p><a href="https://diary.dorcandy.cn/link" target="_blank"><span style="color:#FFFFFF;">🍒 火喵·友链：  来加上友情链接~</span></a></p>
+                        <form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
+                            <p class="invite center">点击上方的链接来访问小站吧~</p>
+                        </form>
+                    </div>
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#about-us">
+                        <div class="arrow-d">
+							<div class="before">超&nbsp;级&nbsp;帅&nbsp;气&nbsp;的</div>
+							<div class="after">火&nbsp;喵&nbsp;大&nbsp;人</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of register page -->
+            
+            <!-- Begin of about us page -->
+            <div class="section page-about page page-cent" id="s-about-us">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>🍬 关于火喵小站</h3>
+						<h2>想与 <span class="bold">火喵大人</span> 一起愉快的 <span class="bold">深入♂交流</span> 嘛</h2>
+                    </header>
+                    <article class="text">
+                        <p>&emsp;&emsp;火喵是个好名字，既简单又可爱，当然也很好记就是有些绕口
+                            所以来访单朋友称呼我『大帅比』就可以啦~本喵是不会在意的啦~</p>
+                        <p>&emsp;&emsp;	 火喵来自于美丽的北方海滨城市，所以说喵都是爱吃鱼的啦~
+                            当然除了鱼，本喵也是啥都爱吃！但是，唯独不喜欢茄子和青椒                       
+                            除了吃，本喵也喜欢读读书看看片，喝喝奶茶泡泡脚ω</p>
+                    </article>
+<!-- 聊天样式 -->					
+<!-- Left -->
+<div class="sender">
+  <div>
+    <!--img src="https://hexo-1251213061.cos.ap-beijing.myqcloud.com/image/kasa.jpg"-->
+    <img src="./home/img/kasa.jpg">
+  </div>
+  <div>
+    <div class="left_triangle"></div>
+    <span><span style="color:#E56600;">&nbsp;魔镜魔镜，世界上最帅的人是谁？&nbsp;</span></span>
+  </div>
+</div>
+<!-- Right -->
+<div class="receiver">
+  <div>
+    <!--img src="https://static.runoob.com/images/mix/img_avatar.png"-->
+    <img src="./home/img/mix/img_avatar.png">
+  </div>
+  <div>
+    <div class="right_triangle"></div>
+    <span><span style="color:#4C33E5;">那当然是<span style="color:#E53333;">火喵大人</span>啦~</span><span style="color:#4C33E5;"></span><br /></span>
+  </div>
+</div>
+<!-- 聊天样式over -->
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#contact">
+                        <div class="arrow-d">
+							<div class="before">ScarletDor</div>
+							<div class="after">喵&nbsp;窝</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of about us page -->
+                
+            <!-- Begin of Contact page   -->
+            <div class="section page-contact page page-cent" id="s-contact">
+				<!-- Begin of contact information -->
+					<section class="content">
+						<header class="p-title">
+							<h3>💖 联系火喵</h3>
+						</header>
+						<!-- Begin Of Page SubSction -->
+						<div class="contact">
+							<div class="row">
+								<div class="medium-6 columns left">
+									<ul>
+										<li>
+											<h4>Email</h4>
+											<p><a href="mailto://contact@mail.com">zc998800@gmail.com</a></p>
+										</li>
+										<li>
+											<h4>Weibo</h4>
+											<p><a href="https://www.weibo.com/873228391">ScarletDor</a></p>
+										</li>
+										<li>
+											<h4>OICQ</h4>
+											<p><a href="https://wpa.qq.com/msgrd?v=3&uin=873228391&site=qq&menu=yes" target="_blank">873 228 391</a></p>
+										</li>
+									</ul>
+								</div>
+								<div class="medium-6 columns social-links right">
+									<ul>
+
+										<!-- legal notice -->
+										<li class="show-for-medium-up">
+											<h4>新发现</h4>
+											<p><a href="https://diary.dorcandy.cn">Dorcandy.cn</a></p>
+										</li>
+										<li  class="show-for-medium-up">
+											<h4>寻觅踪迹</h4>
+											<!-- Begin of Social links -->
+											<div class="socialnet">
+												<a href="https://www.facebook.com/zc998800"><i class="ion ion-social-facebook"></i></a>
+												<a href="https://www.instagram.com/zc998800"><i class="ion ion-social-instagram"></i></a>
+												<a href="https://twitter.com/zc998800"><i class="ion ion-social-twitter"></i></a>
+												<a href="#"><i class="ion ion-social-pinterest"></i></a>
+												<a href="#"><i class="ion ion-social-tumblr"></i></a>
+											</div>
+											<!-- End of Social links -->
+										</li>
+										<li>
+											<p><img src="img/logo_large.png" alt="Logo" class="logo"></p>
+											<p class="small">喵窝 by <strong><a href="https://highhay.com">Brand</a></strong>. All right reserved 2019</p>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<!-- End of page SubSection -->
+					</section>
+            </div>
+            <!-- End of Contact page  -->   
+        
+        </main>
+
+        <!-- END OF site main content content here -->  
+		
+
+<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 未下载 -->
+        
+        <!-- All Javascript plugins goes here -->
+        <script src="./home/js/vendor/jquery-1.11.2.min.js"></script>
+		<!-- All vendor scripts -->
+        <script src="./home/js/vendor/all.js"></script>
+		
+		<!-- Detailed vendor scripts 下载 -->
+        <!--<script src="./home/js/vendor/jquery.fullPage.min.js"></script>
+        <script src="./home/js/vendor/jquery.slimscroll.min.js"></script>
+        <script src="./home/js/vendor/jquery.knob.min.js"></script>
+        <script src="./home/js/vegas/vegas.min.js"></script>
+        <script src="./home/js/jquery.maximage.js"></script>
+        <script src="./home/js/okvideo.min.js"></script>-->
+		
+		<!-- Downcount JS -->
+        <script src="./home/js/jquery.downCount.js"></script>
+		
+		<!-- Form script -->
+        <script src="./home/js/form_script.js"></script>
+        
+		<!-- Javascript main files -->
+        <script src="./home/js/main.js"></script>
+         
+
+        <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src="//www.google-analytics.com/analytics.js";
+            r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));
+            ga("create","UA-XXXXX-X");ga("send","pageview");
+        </script> 未下载 -->
+    </body>
+</html>
